@@ -70,7 +70,7 @@ export default function App() {
             </motion.p>
 
             <motion.a 
-              href="https://produto.mercadolivre.com.br/MLB-3884431477-tnis-nike-precision-7-unissex-_JM#reco_item_pos=0&reco_backend=item_decorator&reco_backend_type=function&reco_client=home_items-decorator-legacy&reco_id=c1ec3c17-bbfd-4b80-b234-08f2a6c3aa8a&reco_model=&c_id=/home/navigation-recommendations-seed/element&c_uid=82204754-c276-48b3-aee5-9f3142d37848&da_id=navigation&da_position=0&id_origin=/home/dynamic_access&da_sort_algorithm=ranker"
+              href="https://meli.la/2Hwk5T7"
               target="_blank"
               rel="noopener noreferrer"
               variants={fadeInUp}

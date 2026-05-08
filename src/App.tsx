@@ -59,7 +59,7 @@ export default function App() {
           >
             <motion.div variants={fadeInUp} className="flex flex-col">
               <span className="text-[10px] uppercase tracking-[0.4em] text-brand font-black mb-3">Elite Series Release</span>
-              <span className="text-7xl font-light tracking-tighter">$379.99</span>
+              <span className="text-7xl font-light tracking-tighter">R$379.99</span>
             </motion.div>
             
             <motion.p 

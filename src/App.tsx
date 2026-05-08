@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ShoppingCart, Zap, Shield, Target, ChevronRight, Menu, ArrowRight } from "lucide-react";
+import { ShoppingCart, Zap, Shield, Target, ChevronRight, Menu, ArrowRight, MessageCircle } from "lucide-react";
 
 export default function App() {
   const fadeInUp = {
@@ -34,10 +34,6 @@ export default function App() {
           <a href="#" className="hover:text-brand transition-colors">Performance</a>
           <a href="#" className="hover:text-brand transition-colors">Support</a>
         </div>
-
-        <div className="w-12 h-12 border border-white/10 rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition-all">
-          <Menu size={18} />
-        </div>
       </nav>
 
       {/* Hero Section */}
@@ -58,7 +54,7 @@ export default function App() {
             variants={stagger}
           >
             <motion.div variants={fadeInUp} className="flex flex-col">
-              <span className="text-[10px] uppercase tracking-[0.4em] text-brand font-black mb-3">Elite Series Release</span>
+              <span className="text-[10px] uppercase tracking-[0.4em] text-brand font-black mb-3">Alto Desempenho e Custo Benefício</span>
               <span className="text-7xl font-light tracking-tighter">R$379.99</span>
             </motion.div>
             
@@ -66,20 +62,33 @@ export default function App() {
               variants={fadeInUp}
               className="text-white/40 text-sm leading-relaxed max-w-sm font-medium"
             >
-              Engineered for the fastest transitions on hardwood. The Precision 7 features our patented reactive foam system for explosive energy return and lateral stability.
+              Desenvolvido para oferecer estabilidade, tração e agilidade em quadra, o Nike Precision 7 é um tênis leve e confortável, com design moderno, cabedal respirável e solado aderente. Ideal para jogadores que buscam desempenho e ótimo custo-benefício..
             </motion.p>
 
-            <motion.a 
-              href="https://meli.la/2Hwk5T7"
-              target="_blank"
-              rel="noopener noreferrer"
-              variants={fadeInUp}
-              id="buy-button-hero"
-              className="bg-white text-black h-20 px-12 rounded-full font-black uppercase text-xs tracking-[0.2em] hover:bg-brand hover:text-white transition-all duration-500 w-fit flex items-center gap-4 group cursor-pointer"
-            >
-              Buy Now — Precision 07
-              <ShoppingCart size={16} className="group-hover:translate-x-1 transition-transform" />
-            </motion.a>
+            <div className="flex flex-col gap-4">
+              <motion.a 
+                href="https://meli.la/2Hwk5T7"
+                target="_blank"
+                rel="noopener noreferrer"
+                variants={fadeInUp}
+                id="buy-button-hero"
+                className="bg-white text-black h-20 px-12 rounded-full font-black uppercase text-xs tracking-[0.2em] hover:bg-brand hover:text-white transition-all duration-500 w-fit flex items-center gap-4 group cursor-pointer shadow-xl"
+              >
+                Compre aqui — Precision 07
+                <ShoppingCart size={16} className="group-hover:translate-x-1 transition-transform" />
+              </motion.a>
+
+              <motion.a 
+                href="https://aaaaaaaaartimanhas.app.n8n.cloud/webhook/fcf68759-ba71-4e20-a3ef-ddf1e16a5352/chat"
+                target="_blank"
+                rel="noopener noreferrer"
+                variants={fadeInUp}
+                className="bg-brand text-white h-20 px-12 rounded-full font-black uppercase text-xs tracking-[0.2em] hover:brightness-110 transition-all duration-500 w-fit flex items-center gap-4 group cursor-pointer shadow-xl shadow-brand/20"
+              >
+                Tire Dúvidas
+                <MessageCircle size={16} className="group-hover:rotate-12 transition-transform" />
+              </motion.a>
+            </div>
           </motion.div>
 
           {/* Center: Main Visual */}
@@ -106,16 +115,16 @@ export default function App() {
             variants={stagger}
           >
             <motion.div variants={fadeInUp} className="flex flex-col gap-2">
-              <span className="text-[9px] uppercase tracking-[0.4em] text-white/30 font-bold">Sole Technology</span>
+              <span className="text-[9px] uppercase tracking-[0.4em] text-white/30 font-bold">Technologia da Sola</span>
               <span className="text-2xl font-black uppercase tracking-tighter italic">Herringbone</span>
             </motion.div>
             <motion.div variants={fadeInUp} className="flex flex-col gap-2">
-              <span className="text-[9px] uppercase tracking-[0.4em] text-white/30 font-bold">Construction</span>
+              <span className="text-[9px] uppercase tracking-[0.4em] text-white/30 font-bold">Material</span>
               <span className="text-2xl font-black uppercase tracking-tighter italic">Breathable Mesh</span>
             </motion.div>
             <motion.div variants={fadeInUp} className="flex flex-col gap-2">
-              <span className="text-[9px] uppercase tracking-[0.4em] text-white/30 font-bold">Weight Profile</span>
-              <span className="text-3xl font-black uppercase tracking-tighter italic text-brand">284 Grams</span>
+              <span className="text-[9px] uppercase tracking-[0.4em] text-white/30 font-bold">Peso Aproximado</span>
+              <span className="text-3xl font-black uppercase tracking-tighter italic text-brand">284g</span>
             </motion.div>
           </motion.div>
         </div>
@@ -128,12 +137,12 @@ export default function App() {
               <span className="text-xs font-mono font-bold tracking-widest">PR-07-2026</span>
             </div>
             <div className="flex flex-col gap-3">
-              <span className="text-[8px] uppercase tracking-[0.4em] text-white/30 font-bold italic">Court Type</span>
-              <span className="text-xs font-mono font-bold tracking-widest">INDOOR / HARDWOOD</span>
+              <span className="text-[8px] uppercase tracking-[0.4em] text-white/30 font-bold italic">Tipo de Quadra</span>
+              <span className="text-xs font-mono font-bold tracking-widest">INDOOR / OUTDOOR</span>
             </div>
             <div className="flex flex-col gap-3 hidden md:flex">
-              <span className="text-[8px] uppercase tracking-[0.4em] text-white/30 font-bold italic">Sustainability</span>
-              <span className="text-xs font-mono font-bold tracking-widest">35% RECYCLED</span>
+              <span className="text-[8px] uppercase tracking-[0.4em] text-white/30 font-bold italic">Sustentabilidade</span>
+              <span className="text-xs font-mono font-bold tracking-widest">30% RECYCLED</span>
             </div>
           </div>
           
